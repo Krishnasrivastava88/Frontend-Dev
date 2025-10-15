@@ -1,1 +1,1 @@
-# Responsive CSS Branch
+# Bootstrap Branch
