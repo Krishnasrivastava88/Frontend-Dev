@@ -1,0 +1,49 @@
+/* task5.css - pricing table */
+*{box-sizing:border-box}
+body{font-family:Arial;margin:2rem;background:#f5f7fb;color:#111}
+
+.pricing{
+  display:flex;
+  gap:1rem;
+  max-width:1000px;
+  margin:0 auto;
+  align-items:stretch; /* equal height */
+}
+
+/* plan box */
+.plan{
+  flex:1;
+  background:white;
+  padding:1.5rem;
+  border:2px solid rgba(0,0,0,0.06);
+  border-radius:10px;
+  box-shadow:0 6px 12px rgba(0,0,0,0.06);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition: transform .25s ease, background-color .25s ease;
+}
+
+/* hover (no JS) */
+.plan:hover{
+  transform: scale(1.03);
+  background:#fcfcff;
+}
+
+/* highlight popular plan with different border and background */
+.plan.popular{
+  border:2px solid #ff7f50;
+  background: linear-gradient(180deg,#fff7f0,#fffaf6);
+  transform-origin:center;
+}
+
+/* price and button */
+.price{font-size:1.5rem;font-weight:700;margin:0.5rem 0}
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:6px;text-decoration:none;background:#0b63d6;color:white;margin-top:1rem}
+
+/* ensure equal heights when content varies by stretching */
+.plan ul{margin:0.5rem 0 0 1rem}
+/* responsive: stack on small screens */
+@media (max-width:700px){
+  .pricing{flex-direction:column}
+}
