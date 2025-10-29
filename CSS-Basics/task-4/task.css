@@ -1,0 +1,33 @@
+/* task4.css - article styling */
+body{font-family:Georgia, 'Times New Roman', serif; background:#fffbe6;padding:2rem;color:#222}
+header h1{font-size:2rem;margin-bottom:0.5rem}
+article{max-width:900px;margin:0 auto;background:white;padding:2rem;border-left:6px solid #ffd966}
+
+/* spacing between paragraphs */
+article p{margin:1rem 0;line-height:1.65}
+
+/* first letter styling */
+article p::first-letter{
+  font-size:2.5rem;
+  float:left;
+  margin-right:.4rem;
+  font-weight:700;
+  color:#c76f00;
+}
+
+/* first line bold */
+article p::first-line{
+  font-weight:700;
+}
+
+/* style mark */
+mark{background:#ffef99;color:#5a3000;padding:0 .15rem;border-radius:2px}
+
+/* blockquote emphasis */
+blockquote{
+  margin:1.5rem 0;
+  padding:1rem 1.25rem;
+  background:#fff6e6;
+  border-left:6px solid #ffb347;
+  color:#5a3d00;
+}
